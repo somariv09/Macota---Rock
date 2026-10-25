@@ -1,0 +1,8 @@
+# Entornos de desarrollo
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
