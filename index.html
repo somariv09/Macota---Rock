@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi mascota virtual</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="funciones.js" defer></script>
+</head>
+<body>
+    <main id="escenario" class="dia">
+        <h1>Mi mascota virtual</h1>
+
+        <!--Sección donde iran los indicadores de la pantalla, costa de tres indicadores
+        El de felicidad, descansoy hambre-->
+        <section id="indicadores">
+            <div class="indicador">
+                <label for="felicidad">Felicidad</label>
+                <progress id="felicidad" max="100"></progress>
+                <span id="valorFelicidad"></span>
+            </div>
+
+            <div class="indicador">
+                <label for="hambre">Hambre</label>
+                <progress id="hambre" max="100"></progress>
+                <span id="valorHambre"></span>
+            </div>
+        </section>
+
+        <!--Imagen svg sobre como luce la mascota-->
+        <section id="areaMascota">
+            <div id="mascota" aria-label="Mi mascota virtual" role="img"></div>
+        </section>
+        <h2 id="nombreMascota">Rock</h2>
+
+        <!--Aréa de mensajes, acá apareceran las alertas y los comentarios-->
+        <section id="areaMensajes">
+            <div id="alertas"></div>
+            <p id="mensajeAccion"></p>
+        </section>
+
+        <!--Botones de interaccion con la mascota, son tres acariciar, descanso y alimentar -->
+        <section id="acciones">
+            <button id="btnAcariciar">Acariciar</button>
+            <button id="btnAlimentar">Alimentar</button>
+        </section>
+</body>
+</html>
